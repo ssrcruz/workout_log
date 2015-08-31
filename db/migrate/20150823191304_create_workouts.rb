@@ -3,6 +3,7 @@ class CreateWorkouts < ActiveRecord::Migration
     create_table :workouts do |t|
       t.datetime :date
       t.string :workout
+      t.string :mood
       t.string :length
 
       t.timestamps null: false
